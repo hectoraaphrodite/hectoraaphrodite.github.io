@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hectoraaphrodite.github.io/</id>
     <title>Gridea</title>
-    <updated>2019-07-12T16:53:49.645Z</updated>
+    <updated>2019-07-12T17:01:50.143Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hectoraaphrodite.github.io/"/>
     <link rel="self" href="https://hectoraaphrodite.github.io//atom.xml"/>
@@ -10,6 +10,24 @@
     <logo>https://hectoraaphrodite.github.io//images/avatar.png</logo>
     <icon>https://hectoraaphrodite.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[pandas学习笔记]]></title>
+        <id>https://hectoraaphrodite.github.io//post/pandas-xue-xi-bi-ji</id>
+        <link href="https://hectoraaphrodite.github.io//post/pandas-xue-xi-bi-ji">
+        </link>
+        <updated>2019-07-12T17:01:27.000Z</updated>
+        <content type="html"><![CDATA[<p>pandas</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[numpy学习笔记]]></title>
+        <id>https://hectoraaphrodite.github.io//post/numpy-xue-xi-bi-ji</id>
+        <link href="https://hectoraaphrodite.github.io//post/numpy-xue-xi-bi-ji">
+        </link>
+        <updated>2019-07-12T17:00:56.000Z</updated>
+        <content type="html"><![CDATA[<p>numpy</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[AI人工智能之路]]></title>
         <id>https://hectoraaphrodite.github.io//post/ai-ren-gong-zhi-neng-zhi-lu</id>
@@ -32,19 +50,6 @@ id: location.pathname,      // Ensure uniqueness and length less than 50
 distractionFreeMode: false  // Facebook-like distraction free mode
 })</p>
 <p>gitalk.render('gitalk-container')</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[关于]]></title>
-        <id>https://hectoraaphrodite.github.io//post/about</id>
-        <link href="https://hectoraaphrodite.github.io//post/about">
-        </link>
-        <updated>2019-01-25T11:09:48.000Z</updated>
-        <summary type="html"><![CDATA[<p>人工智能学习中，同道可以交流哇^^</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>人工智能学习中，同道可以交流哇^^</p>
-<!-- more -->
-<p>^^</p>
 ]]></content>
     </entry>
 </feed>

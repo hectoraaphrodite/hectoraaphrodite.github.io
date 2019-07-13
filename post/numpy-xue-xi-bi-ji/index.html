@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://hectoraaphrodite.github.io//favicon.ico?v=1562999020176">
+<link rel="shortcut icon" href="https://hectoraaphrodite.github.io//favicon.ico?v=1563002091557">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://hectoraaphrodite.github.io//styles/main.css">
 
@@ -36,7 +36,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://hectoraaphrodite.github.io/">
-        <img src="https://hectoraaphrodite.github.io//images/avatar.png?v=1562999020176" class="site-logo">
+        <img src="https://hectoraaphrodite.github.io//images/avatar.png?v=1563002091557" class="site-logo">
         <h1 class="site-title">hectoraaphrodite</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -102,7 +102,17 @@
             <div class="post-date">2019-07-13</div>
             
             <div class="post-content">
-              <h6 id="numpy可以保存不同的数据类型但是数据类型必须一致">numpy可以保存不同的数据类型，但是数据类型必须一致</h6>
+              <pre><code class="language-python">import numpy as np
+
+n = np.array([1,2,3])
+n,type(n[0])
+</code></pre>
+<pre><code>(array([1, 2, 3]), numpy.int32)
+</code></pre>
+<pre><code class="language-python">n1 = np.array([1,2,3]+list('abc'))
+n1,type(n1[1])
+</code></pre>
+<pre><code>(array(['1', '2', '3', 'a', 'b', 'c'], dtype='&lt;U11'), numpy.str_)</code></pre>
 
             </div>
             

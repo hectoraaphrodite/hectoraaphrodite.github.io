@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>标签列表 | hectoraaphrodite</title>
+<title>腾讯面试记 | hectoraaphrodite</title>
 <meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -13,6 +13,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://hectoraaphrodite.github.io//styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -91,10 +97,53 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="tag-list-title">标签列表</h2>
-          <div class="tags-container">
+          <div class="post-detail">
+            <h2 class="post-title">腾讯面试记</h2>
+            <div class="post-date">2019-07-16</div>
             
+            <div class="post-content">
+              <ol>
+<li>tcp与udp的区别</li>
+<li>描述tcp建立连接的过程</li>
+<li>http协议与tcp的关系</li>
+<li>http与https的区别</li>
+<li>get与post的区别</li>
+<li>对cookie与session的理解</li>
+<li>cookie保存用户名密码是否安全，为什么</li>
+<li>对flask模板渲染的描述</li>
+<li>TPS/QPS/RPS与并发数的关系</li>
+<li>用什么抓包工具，为什么wireshark不能抓tcp协议数据</li>
+<li>SQL注入是什么，举例说明</li>
+<li>XSS攻击时什么，举例说明</li>
+<li>接口测试从哪些维度开展</li>
+<li>设计一个搜索功能的测试用例</li>
+<li>从安全方面考虑搜索功能加入登录功能之后的案例</li>
+<li>以前微信有个支付红包查看相片的功能，设计案例，如果想不支付金额又想查看照片，你会怎么尝试</li>
+</ol>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://hectoraaphrodite.github.io//post/matplotlib-xue-xi-bi-ji">
+                  <h3 class="post-title">
+                    matplotlib学习笔记
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
           </div>
+
         </div>
       </div>
     </div>
@@ -115,6 +164,29 @@ var app = new Vue({
 })
 
 </script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '1f9c8b1b2d1ce279358a',
+        clientSecret: '0e0076cafa387fba232a1eadcecaa53d991b0bb9',
+        repo: 'hectoraaphrodite.github.io',
+        owner: 'hectoraaphrodite',
+        admin: ['hectoraaphrodite'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hectoraaphrodite.github.io/</id>
     <title>hectoraaphrodite</title>
-    <updated>2019-07-13T11:37:05.125Z</updated>
+    <updated>2019-07-15T17:10:26.222Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hectoraaphrodite.github.io/"/>
     <link rel="self" href="https://hectoraaphrodite.github.io//atom.xml"/>
@@ -10,6 +10,44 @@
     <logo>https://hectoraaphrodite.github.io//images/avatar.png</logo>
     <icon>https://hectoraaphrodite.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, hectoraaphrodite</rights>
+    <entry>
+        <title type="html"><![CDATA[腾讯面试记]]></title>
+        <id>https://hectoraaphrodite.github.io//post/teng-xun-mian-shi-ji</id>
+        <link href="https://hectoraaphrodite.github.io//post/teng-xun-mian-shi-ji">
+        </link>
+        <updated>2019-07-15T16:54:41.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>tcp与udp的区别</li>
+<li>描述tcp建立连接的过程</li>
+<li>http协议与tcp的关系</li>
+<li>http与https的区别</li>
+<li>get与post的区别</li>
+<li>对cookie与session的理解</li>
+<li>cookie保存用户名密码是否安全，为什么</li>
+<li>对flask模板渲染的描述</li>
+<li>TPS/QPS/RPS与并发数的关系</li>
+<li>用什么抓包工具，为什么wireshark不能抓tcp协议数据</li>
+<li>SQL注入是什么，举例说明</li>
+<li>XSS攻击时什么，举例说明</li>
+<li>接口测试从哪些维度开展</li>
+<li>设计一个搜索功能的测试用例</li>
+<li>从安全方面考虑搜索功能加入登录功能之后的案例</li>
+<li>以前微信有个支付红包查看相片的功能，设计案例，如果想不支付金额又想查看照片，你会怎么尝试</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[matplotlib学习笔记]]></title>
+        <id>https://hectoraaphrodite.github.io//post/matplotlib-xue-xi-bi-ji</id>
+        <link href="https://hectoraaphrodite.github.io//post/matplotlib-xue-xi-bi-ji">
+        </link>
+        <updated>2019-07-14T10:19:36.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>%matplotlib inline 可在jupyter notebook直接制图</li>
+<li></li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[pandas学习笔记]]></title>
         <id>https://hectoraaphrodite.github.io//post/pandas-xue-xi-bi-ji</id>

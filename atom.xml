@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hectoraaphrodite.github.io/</id>
     <title>hectoraaphrodite</title>
-    <updated>2019-07-16T17:29:04.664Z</updated>
+    <updated>2019-07-16T18:47:50.131Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hectoraaphrodite.github.io/"/>
     <link rel="self" href="https://hectoraaphrodite.github.io//atom.xml"/>
@@ -81,7 +81,34 @@ SELECT * FROM ... WHERE a = '%%%' ESCAPE ''</li>
 <li>如果值什么都没有  is null,  ='' 和 =null 都匹配不到</li>
 <li>逻辑运算符 NOT AND OR  ,要改变运算顺序可以用括号</li>
 <li>排序  SELECT .. FROM .. ORDER BY EXP1,EXP2 DESC;</li>
+<li>常用函数
+<ol>
+<li>LOWER</li>
+<li>UPPER</li>
+<li>INITCAP</li>
+<li>NVL</li>
+<li>DECODE</li>
+<li>CONCAT</li>
+<li>SUBSTR</li>
+<li>LENGTH</li>
+<li>INSTR</li>
+<li>LPAD</li>
+<li>RPAD</li>
+<li>LTRIM</li>
+<li>RTRIM</li>
+<li>TRIM</li>
+<li>ROUND</li>
+<li>TRUNC</li>
+<li>MOD</li>
+<li>POWER</li>
+<li>SIGN</li>
+<li>ASCII</li>
+<li>CHR</li>
+<li>TO_CHAR</li>
+<li>TO_DATE</li>
 <li></li>
+</ol>
+</li>
 </ol>
 ]]></content>
     </entry>

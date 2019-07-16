@@ -2,14 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hectoraaphrodite.github.io/</id>
     <title>hectoraaphrodite</title>
-    <updated>2019-07-15T17:11:38.410Z</updated>
+    <updated>2019-07-16T11:00:43.221Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hectoraaphrodite.github.io/"/>
     <link rel="self" href="https://hectoraaphrodite.github.io//atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>持续学习</subtitle>
     <logo>https://hectoraaphrodite.github.io//images/avatar.png</logo>
     <icon>https://hectoraaphrodite.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, hectoraaphrodite</rights>
+    <entry>
+        <title type="html"><![CDATA[数据库测试]]></title>
+        <id>https://hectoraaphrodite.github.io//post/shu-ju-ku-ce-shi</id>
+        <link href="https://hectoraaphrodite.github.io//post/shu-ju-ku-ce-shi">
+        </link>
+        <updated>2019-07-16T10:58:45.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>表设计是否合理：包括可扩展性、索引、主键、外键、非空、默认值。。。</li>
+<li>触发器是否合理，影响性能</li>
+<li>存储过程是否设计合理，性能调优</li>
+<li>sql的逻辑是否符合业务需求</li>
+<li>sql的性能调优</li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[腾讯面试记]]></title>
         <id>https://hectoraaphrodite.github.io//post/teng-xun-mian-shi-ji</id>
@@ -27,6 +42,7 @@
 <li>对flask模板渲染的描述</li>
 <li>TPS/QPS/RPS与并发数的关系</li>
 <li>用什么抓包工具，为什么wireshark不能抓tcp协议数据</li>
+<li>css选择器和xpath选择器的优劣比较</li>
 <li>SQL注入是什么，举例说明</li>
 <li>XSS攻击时什么，举例说明</li>
 <li>接口测试从哪些维度开展</li>

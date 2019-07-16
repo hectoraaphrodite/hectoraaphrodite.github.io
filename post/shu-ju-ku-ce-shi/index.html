@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>标签列表 | hectoraaphrodite</title>
+<title>数据库测试 | hectoraaphrodite</title>
 <meta name="description" content="持续学习">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -13,6 +13,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://hectoraaphrodite.github.io//styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -91,10 +97,42 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="tag-list-title">标签列表</h2>
-          <div class="tags-container">
+          <div class="post-detail">
+            <h2 class="post-title">数据库测试</h2>
+            <div class="post-date">2019-07-16</div>
             
+            <div class="post-content">
+              <ol>
+<li>表设计是否合理：包括可扩展性、索引、主键、外键、非空、默认值。。。</li>
+<li>触发器是否合理，影响性能</li>
+<li>存储过程是否设计合理，性能调优</li>
+<li>sql的逻辑是否符合业务需求</li>
+<li>sql的性能调优</li>
+</ol>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://hectoraaphrodite.github.io//post/teng-xun-mian-shi-ji">
+                  <h3 class="post-title">
+                    腾讯面试记
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
           </div>
+
         </div>
       </div>
     </div>
@@ -115,6 +153,29 @@ var app = new Vue({
 })
 
 </script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '1f9c8b1b2d1ce279358a',
+        clientSecret: '0e0076cafa387fba232a1eadcecaa53d991b0bb9',
+        repo: 'hectoraaphrodite.github.io',
+        owner: 'hectoraaphrodite',
+        admin: ['hectoraaphrodite'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 

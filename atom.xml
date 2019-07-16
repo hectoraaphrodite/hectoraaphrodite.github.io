@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hectoraaphrodite.github.io/</id>
     <title>hectoraaphrodite</title>
-    <updated>2019-07-16T11:00:43.221Z</updated>
+    <updated>2019-07-16T17:29:04.664Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hectoraaphrodite.github.io/"/>
     <link rel="self" href="https://hectoraaphrodite.github.io//atom.xml"/>
@@ -10,6 +10,81 @@
     <logo>https://hectoraaphrodite.github.io//images/avatar.png</logo>
     <icon>https://hectoraaphrodite.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, hectoraaphrodite</rights>
+    <entry>
+        <title type="html"><![CDATA[测试案例常用设计方法]]></title>
+        <id>https://hectoraaphrodite.github.io//post/ce-shi-an-li-chang-yong-she-ji-fang-fa</id>
+        <link href="https://hectoraaphrodite.github.io//post/ce-shi-an-li-chang-yong-she-ji-fang-fa">
+        </link>
+        <updated>2019-07-16T17:26:50.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>
+<p>等价类划分</p>
+</li>
+<li>
+<p>边界值分析</p>
+</li>
+<li>
+<p>决策表</p>
+</li>
+<li>
+<p>状态转换测试</p>
+</li>
+<li>
+<p>分类树方法</p>
+</li>
+<li>
+<p>结对测试</p>
+</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Oracle学习]]></title>
+        <id>https://hectoraaphrodite.github.io//post/oracle-xue-xi</id>
+        <link href="https://hectoraaphrodite.github.io//post/oracle-xue-xi">
+        </link>
+        <updated>2019-07-16T11:57:24.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>关键字不能作为表的列名或表名
+SELECT * FROM V$RESERVED_WORDS WHERE keword IN ('WHRE','DATE','DROP','ALTER');</li>
+<li>查询数据库用户
+SELECT username,accout_status,created FROM dba_users;</li>
+<li>创建用户
+CREAT USER mai IDENTIFIED BY thepassword;</li>
+<li>新建&gt;命令窗口 进入交互模式</li>
+<li>SELECT 列名... FROM 表名 WHERE 限定语句; 避免使用SELECT * ... 会增加系统开销</li>
+<li>dual表的用途
+<ol>
+<li>基本的算术运算： SELECT (10+20)/2 FROM dual;
+四舍五入：SELECT ROUND((12+17)/3,2) FROM dual;
+求余: SELECT MOD(3/2) FROM dual;</li>
+<li>获取当前时间： SELECT SYSDATE FROM dual;
+SELECT SYSDATE-to_date('2019-07-16 22:30:15','yyyy-MM-DD hh24:mi:ss')</li>
+</ol>
+</li>
+<li>NVL(expr1,expr2) 转换一个空值到一个实际的值（解决场景：一个列的值加上一个空值会得到空，如果再乘以一个数也会时空，所以可以用nvl先把空值转换为0）</li>
+<li>别名  AS(可省略 ，空格后直接接别名),中文别名必须用双引号括起来(也只有别名用双引号)</li>
+<li>字符串连接符 ||</li>
+<li>DISTINCT 去重
+SELECT DISTINCT  ... FROM ...;</li>
+<li>regexp_like,regexp_instr</li>
+<li>having可以使用聚合函数</li>
+<li>不等于 &lt;&gt; 或者 !=</li>
+<li>
+<blockquote>
+<p>ALL 大于最大的； &lt;ALL大于最小的； &gt;ANY 大于最小的 &lt;ANY小于最大的</p>
+</blockquote>
+</li>
+<li>通配符  %匹配0个或多个 _匹配单个</li>
+<li>转义
+SELECT * FROM ... WHERE a = '%%%' ESCAPE ''</li>
+<li>如果值什么都没有  is null,  ='' 和 =null 都匹配不到</li>
+<li>逻辑运算符 NOT AND OR  ,要改变运算顺序可以用括号</li>
+<li>排序  SELECT .. FROM .. ORDER BY EXP1,EXP2 DESC;</li>
+<li></li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[数据库测试]]></title>
         <id>https://hectoraaphrodite.github.io//post/shu-ju-ku-ce-shi</id>
@@ -23,6 +98,7 @@
 <li>sql的逻辑是否符合业务需求</li>
 <li>sql的性能调优</li>
 </ol>
+<p><a href="https://blog.csdn.net/test_soy/article/details/48344661">test</a></p>
 ]]></content>
     </entry>
     <entry>

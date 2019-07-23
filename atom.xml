@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hectoraaphrodite.github.io/</id>
     <title>hectoraaphrodite</title>
-    <updated>2019-07-16T18:47:50.131Z</updated>
+    <updated>2019-07-23T04:38:16.950Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hectoraaphrodite.github.io/"/>
     <link rel="self" href="https://hectoraaphrodite.github.io//atom.xml"/>
@@ -10,6 +10,182 @@
     <logo>https://hectoraaphrodite.github.io//images/avatar.png</logo>
     <icon>https://hectoraaphrodite.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, hectoraaphrodite</rights>
+    <entry>
+        <title type="html"><![CDATA[linux]]></title>
+        <id>https://hectoraaphrodite.github.io//post/linux</id>
+        <link href="https://hectoraaphrodite.github.io//post/linux">
+        </link>
+        <updated>2019-07-22T11:51:54.000Z</updated>
+        <content type="html"><![CDATA[<p>ls
+1. -a
+2. -l
+3. -d
+4. -h
+5. -i</p>
+<p>mkdir</p>
+<ol>
+<li>-p 递归创建</li>
+</ol>
+<p>cp</p>
+<p>mv</p>
+<p>rm</p>
+<p>touch</p>
+<p>cat  适合小内容
+1. -n 显示行号
+2. tac 倒序显示</p>
+<p>more 可以分页显示</p>
+<ol>
+<li>空格或f 翻页</li>
+<li>回车 换行</li>
+<li>q或Q 退出</li>
+</ol>
+<p>less  可以向上翻页
+1. pugeup  一页一页上翻
+2. ⬆         一行一行上翻
+3. /            搜索
+4. n           搜索之后接着往下找 next</p>
+<p>head	
+tail
+-f  动态显示
+ln
+软连接 快捷方式  lrwxrwxrwx
+硬连接 拷贝+同步更新   不能跨分区 不能针对目录</p>
+<p>chmod
+r-4 w-2 x-1
+-R 递归修改</p>
+<p>chown
+chgrp
+useradd
+groupadd
+umask -S</p>
+<p>find
+1. find [搜索范围][匹配条件]
+2. find /etc -name <em>xxx</em>      通配符
+3. find /etc -name abc???   匹配单个字符
+4. find /etc -iname abc???   忽略大小写
+5. find / -size +1024000
+6. find / -user/-group xxx
+7. -amin -cmin -mmin
+8. -type  f,d,l
+9. -a 同时满足条件 and
+10. -o 满足其一即可 or
+11. find /etc -name xxx -exc/-ok 命令 {} ;      -ok询问确认
+12. find . -inum 12345 -exec rm {} ;</p>
+<p>locate
+updatedb</p>
+<p>which  查找命令文件路径/别名信息
+whereis</p>
+<p>grep
+1. -i 忽略大小写
+2. -v 屏蔽 grep -v ^# /xxx/xxx</p>
+<p>man
+1. 1 命令的帮助
+2. 5 配置文件的帮助  man 5 passwd</p>
+<p>whatis  查命令
+apropos 查配置文件
+--help    toch --help  列出常见的选项
+info  与man差不多
+help 查看内置命令(whereis which找不到的命令)，shell命令</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[nginx学习笔记]]></title>
+        <id>https://hectoraaphrodite.github.io//post/nginx-xue-xi-bi-ji</id>
+        <link href="https://hectoraaphrodite.github.io//post/nginx-xue-xi-bi-ji">
+        </link>
+        <updated>2019-07-19T14:28:52.000Z</updated>
+        <content type="html"><![CDATA[<p>方法</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[flask部署到centos]]></title>
+        <id>https://hectoraaphrodite.github.io//post/flask-bu-shu-dao-centos</id>
+        <link href="https://hectoraaphrodite.github.io//post/flask-bu-shu-dao-centos">
+        </link>
+        <updated>2019-07-18T14:54:44.000Z</updated>
+        <content type="html"><![CDATA[<p>$gunicorn -w 4-b 0.0.0.0：8000 mwsgi：app</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[git bash 免密ssh 登录配置]]></title>
+        <id>https://hectoraaphrodite.github.io//post/git-bash-mian-mi-ssh-deng-lu-pei-zhi</id>
+        <link href="https://hectoraaphrodite.github.io//post/git-bash-mian-mi-ssh-deng-lu-pei-zhi">
+        </link>
+        <updated>2019-07-18T14:46:37.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>使用命令ssh-keygen ，生成私钥和公钥</li>
+<li>私钥保存在本机~/.ssh下，公钥保存在服务器/root/.ssh下  密码直接回车，这样才能免密</li>
+<li>cat id_rsa.pub &gt;&gt; authorized_keys</li>
+<li>vim /etc/ssh/sshd_config 去掉#激活(AuthorizedKeysFile      .ssh/authorized_keys)</li>
+<li>重启ssh服务，systemctl restart sshd.service 或 service sshd restart</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[尝试跨境电商]]></title>
+        <id>https://hectoraaphrodite.github.io//post/chang-shi-kua-jing-dian-shang</id>
+        <link href="https://hectoraaphrodite.github.io//post/chang-shi-kua-jing-dian-shang">
+        </link>
+        <updated>2019-07-18T08:44:16.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>制作Logo</li>
+<li>注册商标/注册美国公司</li>
+<li>注册亚马逊卖家账号</li>
+<li>安装辅助工具</li>
+<li>选品</li>
+<li>自建listing</li>
+<li>挂载商品页面</li>
+<li>结算渠道</li>
+<li>引流seo优化</li>
+<li>自建站</li>
+<li>自动化工具</li>
+<li>持续优化</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[安全测试]]></title>
+        <id>https://hectoraaphrodite.github.io//post/an-quan-ce-shi</id>
+        <link href="https://hectoraaphrodite.github.io//post/an-quan-ce-shi">
+        </link>
+        <updated>2019-07-17T06:56:41.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>
+<p>SQL注入
++ 如果直接将用户传入的数据作为参数使用字符串拼接的方式插入到SQL查询中，那么攻击者可以通过注入其他语句来执行攻击操作
++ 攻击者输入“'or 1=1--”
+```SQL</p>
+<pre><code> 	SELECT*FROM students WHERE password=''or 1=1--'；
+ 	
+ 	SELECT*FROM students WHERE password=''；drop table students；--'；
+ 	
+ 	SELECT * FROM Users WHERE Username='' AND Password=''
+ 	$username = 1' or '1' = '1
+ 	$password = 1' or '1' = '1
+ 	👇			
+ 	SELECT * FROM Users WHERE Username='1' OR '1' = '1' AND Password='1' OR '1' = '1'
+</code></pre>
+</li>
+<li>
+<p>XSS攻击</p>
+<ol>
+<li>反射型XSS攻击
+<ul>
+<li>又称为非持久型攻击，</li>
+</ul>
+</li>
+<li>存储型XSS
+<ul>
+<li>又称持久型攻击</li>
+<li>如果服务器接收数据后未经处理就存储到数据库中，就又可能发生此风险</li>
+</ul>
+</li>
+<li>主要防范措施时对用户输入的内容进行转义</li>
+</ol>
+</li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[测试案例常用设计方法]]></title>
         <id>https://hectoraaphrodite.github.io//post/ce-shi-an-li-chang-yong-she-ji-fang-fa</id>
@@ -153,82 +329,6 @@ SELECT * FROM ... WHERE a = '%%%' ESCAPE ''</li>
 <li>从安全方面考虑搜索功能加入登录功能之后的案例</li>
 <li>以前微信有个支付红包查看相片的功能，设计案例，如果想不支付金额又想查看照片，你会怎么尝试</li>
 </ol>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[matplotlib学习笔记]]></title>
-        <id>https://hectoraaphrodite.github.io//post/matplotlib-xue-xi-bi-ji</id>
-        <link href="https://hectoraaphrodite.github.io//post/matplotlib-xue-xi-bi-ji">
-        </link>
-        <updated>2019-07-14T10:19:36.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>%matplotlib inline 可在jupyter notebook直接制图</li>
-<li></li>
-</ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[pandas学习笔记]]></title>
-        <id>https://hectoraaphrodite.github.io//post/pandas-xue-xi-bi-ji</id>
-        <link href="https://hectoraaphrodite.github.io//post/pandas-xue-xi-bi-ji">
-        </link>
-        <updated>2019-07-12T17:01:27.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>
-<p>Series 向量</p>
-<ul>
-<li>插入一维数组</li>
-</ul>
-</li>
-<li>
-<p>DataFrame</p>
-<ul>
-<li>df.head()</li>
-<li>df.tail()</li>
-<li>pd.read_csv('xxx.csv')</li>
-<li>df.isnull().any()</li>
-<li>df.describe()</li>
-<li>df.corr() 各列相关性</li>
-<li>df.groupby()</li>
-</ul>
-</li>
-</ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[numpy学习笔记]]></title>
-        <id>https://hectoraaphrodite.github.io//post/numpy-xue-xi-bi-ji</id>
-        <link href="https://hectoraaphrodite.github.io//post/numpy-xue-xi-bi-ji">
-        </link>
-        <updated>2019-07-12T17:00:56.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>numpy可以保存不同的数据类型，但是各元素数据类型必须相同，如果初始化时有不同数据类型，会自动进行向上转换</li>
-<li></li>
-</ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[AI人工智能之路]]></title>
-        <id>https://hectoraaphrodite.github.io//post/ai-ren-gong-zhi-neng-zhi-lu</id>
-        <link href="https://hectoraaphrodite.github.io//post/ai-ren-gong-zhi-neng-zhi-lu">
-        </link>
-        <updated>2019-07-12T12:10:13.000Z</updated>
-        <content type="html"><![CDATA[<p>近期规划</p>
-<ol>
-<li>numpy</li>
-<li>pandas</li>
-<li>线性代数</li>
-</ol>
-<p>var gitalk = new Gitalk({
-clientID: 'GitHub Application Client ID',
-clientSecret: 'GitHub Application Client Secret',
-repo: 'GitHub repo',
-owner: 'GitHub repo owner',
-admin: ['GitHub repo owner and collaborators, only these guys can initialize github issues'],
-id: location.pathname,      // Ensure uniqueness and length less than 50
-distractionFreeMode: false  // Facebook-like distraction free mode
-})</p>
-<p>gitalk.render('gitalk-container')</p>
 ]]></content>
     </entry>
 </feed>

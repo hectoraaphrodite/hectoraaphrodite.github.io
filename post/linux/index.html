@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>腾讯面试记 | hectoraaphrodite</title>
+<title>linux | hectoraaphrodite</title>
 <meta name="description" content="持续学习">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -98,38 +98,89 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">腾讯面试记</h2>
-            <div class="post-date">2019-07-16</div>
+            <h2 class="post-title">linux</h2>
+            <div class="post-date">2019-07-22</div>
             
             <div class="post-content">
-              <ol>
-<li>tcp与udp的区别</li>
-<li>描述tcp建立连接的过程</li>
-<li>http协议与tcp的关系</li>
-<li>http与https的区别</li>
-<li>get与post的区别</li>
-<li>对cookie与session的理解</li>
-<li>cookie保存用户名密码是否安全，为什么</li>
-<li>对flask模板渲染的描述</li>
-<li>TPS/QPS/RPS与并发数的关系</li>
-<li>用什么抓包工具，为什么wireshark不能抓tcp协议数据</li>
-<li>css选择器和xpath选择器的优劣比较</li>
-<li>SQL注入是什么，举例说明</li>
-<li>XSS攻击时什么，举例说明</li>
-<li>接口测试从哪些维度开展</li>
-<li>设计一个搜索功能的测试用例</li>
-<li>从安全方面考虑搜索功能加入登录功能之后的案例</li>
-<li>以前微信有个支付红包查看相片的功能，设计案例，如果想不支付金额又想查看照片，你会怎么尝试</li>
+              <p>ls
+1. -a
+2. -l
+3. -d
+4. -h
+5. -i</p>
+<p>mkdir</p>
+<ol>
+<li>-p 递归创建</li>
 </ol>
+<p>cp</p>
+<p>mv</p>
+<p>rm</p>
+<p>touch</p>
+<p>cat  适合小内容
+1. -n 显示行号
+2. tac 倒序显示</p>
+<p>more 可以分页显示</p>
+<ol>
+<li>空格或f 翻页</li>
+<li>回车 换行</li>
+<li>q或Q 退出</li>
+</ol>
+<p>less  可以向上翻页
+1. pugeup  一页一页上翻
+2. ⬆         一行一行上翻
+3. /            搜索
+4. n           搜索之后接着往下找 next</p>
+<p>head	
+tail
+-f  动态显示
+ln
+软连接 快捷方式  lrwxrwxrwx
+硬连接 拷贝+同步更新   不能跨分区 不能针对目录</p>
+<p>chmod
+r-4 w-2 x-1
+-R 递归修改</p>
+<p>chown
+chgrp
+useradd
+groupadd
+umask -S</p>
+<p>find
+1. find [搜索范围][匹配条件]
+2. find /etc -name <em>xxx</em>      通配符
+3. find /etc -name abc???   匹配单个字符
+4. find /etc -iname abc???   忽略大小写
+5. find / -size +1024000
+6. find / -user/-group xxx
+7. -amin -cmin -mmin
+8. -type  f,d,l
+9. -a 同时满足条件 and
+10. -o 满足其一即可 or
+11. find /etc -name xxx -exc/-ok 命令 {} ;      -ok询问确认
+12. find . -inum 12345 -exec rm {} ;</p>
+<p>locate
+updatedb</p>
+<p>which  查找命令文件路径/别名信息
+whereis</p>
+<p>grep
+1. -i 忽略大小写
+2. -v 屏蔽 grep -v ^# /xxx/xxx</p>
+<p>man
+1. 1 命令的帮助
+2. 5 配置文件的帮助  man 5 passwd</p>
+<p>whatis  查命令
+apropos 查配置文件
+--help    toch --help  列出常见的选项
+info  与man差不多
+help 查看内置命令(whereis which找不到的命令)，shell命令</p>
 
             </div>
             
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://hectoraaphrodite.github.io//post/matplotlib-xue-xi-bi-ji">
+                <a href="https://hectoraaphrodite.github.io//post/nginx-xue-xi-bi-ji">
                   <h3 class="post-title">
-                    matplotlib学习笔记
+                    nginx学习笔记
                   </h3>
                 </a>
               </div>

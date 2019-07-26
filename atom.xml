@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hectoraaphrodite.github.io/</id>
     <title>hectoraaphrodite</title>
-    <updated>2019-07-26T11:03:21.270Z</updated>
+    <updated>2019-07-26T11:05:02.790Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hectoraaphrodite.github.io/"/>
     <link rel="self" href="https://hectoraaphrodite.github.io//atom.xml"/>
@@ -27,11 +27,7 @@
 <ul>
 <li>先赋值<br>
 <img src="https://hectoraaphrodite.github.io//post-images/1564138496484.png" alt="">
-引用时确保:
-<ul>
-<li>确保定义了变量</li>
-</ul>
-</li>
+引用时确保:</li>
 <li>从“参数”部分删除所有逗号</li>
 <li>从“参数”部分删除所有额外的空格<br>
 <img src="https://hectoraaphrodite.github.io//post-images/1564138606141.png" alt=""></li>

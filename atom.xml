@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hectoraaphrodite.github.io/</id>
     <title>hectoraaphrodite</title>
-    <updated>2019-07-24T15:11:18.416Z</updated>
+    <updated>2019-07-26T06:24:03.852Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hectoraaphrodite.github.io/"/>
     <link rel="self" href="https://hectoraaphrodite.github.io//atom.xml"/>
@@ -10,6 +10,21 @@
     <logo>https://hectoraaphrodite.github.io//images/avatar.png</logo>
     <icon>https://hectoraaphrodite.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, hectoraaphrodite</rights>
+    <entry>
+        <title type="html"><![CDATA[一篇文章彻底搞懂jmeter变量]]></title>
+        <id>https://hectoraaphrodite.github.io//post/yi-pian-wen-zhang-che-di-gao-dong-jmeter-bian-liang</id>
+        <link href="https://hectoraaphrodite.github.io//post/yi-pian-wen-zhang-che-di-gao-dong-jmeter-bian-liang">
+        </link>
+        <updated>2019-07-26T05:03:16.000Z</updated>
+        <content type="html"><![CDATA[<p>jmeter的变量赋值与引用有多个场景，可以来捋一捋。</p>
+<ol>
+<li>通过xxx</li>
+<li>通过xxx</li>
+<li>通过jsr223处理器
+<img src="https://hectoraaphrodite.github.io//post-images/1564122188382.png" alt=""></li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[linux]]></title>
         <id>https://hectoraaphrodite.github.io//post/linux</id>
@@ -86,6 +101,10 @@ apropos 查配置文件
 --help    toch --help  列出常见的选项
 info  与man差不多
 help 查看内置命令(whereis which找不到的命令)，shell命令</p>
+<p>who
+w
+last
+lastlog -u xxx</p>
 <p>netstat -tlun
 netstat -an</p>
 ]]></content>
@@ -304,33 +323,6 @@ SELECT * FROM ... WHERE a = '%%%' ESCAPE ''</li>
 <li>sql的性能调优</li>
 </ol>
 <p><a href="https://blog.csdn.net/test_soy/article/details/48344661">test</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[腾讯面试记]]></title>
-        <id>https://hectoraaphrodite.github.io//post/teng-xun-mian-shi-ji</id>
-        <link href="https://hectoraaphrodite.github.io//post/teng-xun-mian-shi-ji">
-        </link>
-        <updated>2019-07-15T16:54:41.000Z</updated>
-        <content type="html"><![CDATA[<ol>
-<li>tcp与udp的区别</li>
-<li>描述tcp建立连接的过程</li>
-<li>http协议与tcp的关系</li>
-<li>http与https的区别</li>
-<li>get与post的区别</li>
-<li>对cookie与session的理解</li>
-<li>cookie保存用户名密码是否安全，为什么</li>
-<li>对flask模板渲染的描述</li>
-<li>TPS/QPS/RPS与并发数的关系</li>
-<li>用什么抓包工具，为什么wireshark不能抓tcp协议数据</li>
-<li>css选择器和xpath选择器的优劣比较</li>
-<li>SQL注入是什么，举例说明</li>
-<li>XSS攻击时什么，举例说明</li>
-<li>接口测试从哪些维度开展</li>
-<li>设计一个搜索功能的测试用例</li>
-<li>从安全方面考虑搜索功能加入登录功能之后的案例</li>
-<li>以前微信有个支付红包查看相片的功能，设计案例，如果想不支付金额又想查看照片，你会怎么尝试</li>
-</ol>
 ]]></content>
     </entry>
 </feed>

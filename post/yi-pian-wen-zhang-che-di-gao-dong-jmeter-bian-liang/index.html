@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8" >
 
-<title>一篇文章彻底搞懂jmeter变量引用 | hectoraaphrodite</title>
+<title>jmeter变量引用 | hectoraaphrodite</title>
 <meta name="description" content="持续学习">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://hectoraaphrodite.github.io//favicon.ico?v=1564153165656">
+<link rel="shortcut icon" href="https://hectoraaphrodite.github.io//favicon.ico?v=1564154490151">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://hectoraaphrodite.github.io//styles/main.css">
 
@@ -36,7 +36,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://hectoraaphrodite.github.io/">
-        <img src="https://hectoraaphrodite.github.io//images/avatar.png?v=1564153165656" class="site-logo">
+        <img src="https://hectoraaphrodite.github.io//images/avatar.png?v=1564154490151" class="site-logo">
         <h1 class="site-title">hectoraaphrodite</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -98,18 +98,13 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">一篇文章彻底搞懂jmeter变量引用</h2>
+            <h2 class="post-title">jmeter变量引用</h2>
             <div class="post-date">2019-07-26</div>
             
             <div class="post-content">
-              <p>jmeter的变量赋值与引用有多个场景，可以来捋一捋。</p>
+              <p>jmeter的变量赋值与引用有多个场景，下面介绍2种比较好用的方法：</p>
 <h3 id="同线程组间跨脚本引用">同线程组间跨脚本引用</h3>
-<ol>
-<li>
-<p>通过xxx</p>
-</li>
-<li>
-<p>通过BeanShell处理器</p>
+<p>1.通过BeanShell处理器</p>
 <ul>
 <li>先赋值<br>
 <img src="https://hectoraaphrodite.github.io//post-images/1564138496484.png" alt="">
@@ -118,7 +113,7 @@
 <li>从“参数”部分删除所有额外的空格<br>
 <img src="https://hectoraaphrodite.github.io//post-images/1564138606141.png" alt=""></li>
 </ul>
-</li>
+<ol start="2">
 <li>
 <p>通过jsr223处理器<br>
 先使用vars.put(&quot;name1&quot;,&quot;value&quot;)，再使用 name2 = vars.get(&quot;name1&quot;) ,name2与name1可以重名，当然，&quot;value&quot;也可以用已赋值的变量名替换，但此时不能加引号，而name1需要加引号。</p>

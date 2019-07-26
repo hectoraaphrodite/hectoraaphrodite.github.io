@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hectoraaphrodite.github.io/</id>
     <title>hectoraaphrodite</title>
-    <updated>2019-07-26T07:01:16.108Z</updated>
+    <updated>2019-07-26T10:56:55.831Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hectoraaphrodite.github.io/"/>
     <link rel="self" href="https://hectoraaphrodite.github.io//atom.xml"/>
@@ -17,22 +17,30 @@
         </link>
         <updated>2019-07-26T05:03:16.000Z</updated>
         <content type="html"><![CDATA[<p>jmeter的变量赋值与引用有多个场景，可以来捋一捋。</p>
+<h3 id="同线程组间跨脚本引用">同线程组间跨脚本引用</h3>
 <ol>
 <li>
 <p>通过xxx</p>
 </li>
 <li>
-<p>通过xxx</p>
+<p>通过BeanShell处理器
+先赋值
+<img src="https://hectoraaphrodite.github.io//post-images/1564138496484.png" alt="">
+引用时确保：
+确保定义了变量
+从“参数”部分删除所有逗号
+从“参数”部分删除所有额外的空格。
+<img src="https://hectoraaphrodite.github.io//post-images/1564138606141.png" alt=""></p>
 </li>
 <li>
 <p>通过jsr223处理器</p>
-<ol>
-<li>同一个线程组间调用</li>
-</ol>
+<pre><code> 		 先使用vars.put(&quot;name1&quot;,&quot;value&quot;)，再使用 name2 = vars.get(&quot;name1&quot;) ,name2与name1可以重名，当然，&quot;value&quot;也可以用已赋值的变量名替换，但此时不能加引号，而name1需要加引号。
+</code></pre>
 <p><img src="https://hectoraaphrodite.github.io//post-images/1564124151605.png" alt="">
 <img src="https://hectoraaphrodite.github.io//post-images/1564124358016.png" alt=""></p>
 </li>
 </ol>
+<h3 id="跨线程组变量引用">跨线程组变量引用</h3>
 ]]></content>
     </entry>
     <entry>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hectoraaphrodite.github.io/</id>
     <title>hectoraaphrodite</title>
-    <updated>2019-07-26T14:55:27.022Z</updated>
+    <updated>2019-07-26T14:56:54.465Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hectoraaphrodite.github.io/"/>
     <link rel="self" href="https://hectoraaphrodite.github.io//atom.xml"/>
@@ -41,11 +41,10 @@
 </li>
 </ol>
 <h3 id="跨线程组变量引用">跨线程组变量引用</h3>
-<pre><code>    不论时beanshell或时jsr223处理器，都可以通过props.put(&quot;name&quot;,&quot;value&quot;)和props.get(&quot;name&quot;)组合来使用。
-		![](https://hectoraaphrodite.github.io//post-images/1564152591255.png)
-		![](https://hectoraaphrodite.github.io//post-images/1564152819398.png)
-		![](https://hectoraaphrodite.github.io//post-images/1564152897701.png)
-</code></pre>
+<p>不论时beanshell或时jsr223处理器，都可以通过props.put(&quot;name&quot;,&quot;value&quot;)和props.get(&quot;name&quot;)组合来使用。<br>
+<img src="https://hectoraaphrodite.github.io//post-images/1564152591255.png" alt="">
+<img src="https://hectoraaphrodite.github.io//post-images/1564152819398.png" alt="">
+<img src="https://hectoraaphrodite.github.io//post-images/1564152897701.png" alt=""></p>
 ]]></content>
     </entry>
     <entry>

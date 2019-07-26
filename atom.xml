@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hectoraaphrodite.github.io/</id>
     <title>hectoraaphrodite</title>
-    <updated>2019-07-26T06:24:03.852Z</updated>
+    <updated>2019-07-26T06:59:29.282Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hectoraaphrodite.github.io/"/>
     <link rel="self" href="https://hectoraaphrodite.github.io//atom.xml"/>
@@ -18,10 +18,20 @@
         <updated>2019-07-26T05:03:16.000Z</updated>
         <content type="html"><![CDATA[<p>jmeter的变量赋值与引用有多个场景，可以来捋一捋。</p>
 <ol>
-<li>通过xxx</li>
-<li>通过xxx</li>
-<li>通过jsr223处理器
-<img src="https://hectoraaphrodite.github.io//post-images/1564122188382.png" alt=""></li>
+<li>
+<p>通过xxx</p>
+</li>
+<li>
+<p>通过xxx</p>
+</li>
+<li>
+<p>通过jsr223处理器</p>
+<ol>
+<li>同一个线程组间调用</li>
+</ol>
+<p><img src="https://hectoraaphrodite.github.io//post-images/1564124151605.png" alt="">
+<img src="https://hectoraaphrodite.github.io//post-images/1564124358016.png" alt=""></p>
+</li>
 </ol>
 ]]></content>
     </entry>
